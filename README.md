@@ -1,4 +1,4 @@
-# REE_UTFSM
+# Relaciones USM 2.0
 
 Este es el repositorio del proyecto *Relaciones USM 2.0*, cuyos integrantes son:
 
