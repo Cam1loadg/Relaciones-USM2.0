@@ -22,12 +22,7 @@ Dirigase a la ruta donde se encuentra el proyecto y en su terminal ejecute:
 ```
 npm install
 ```
-Posteriormente ejecute:
-```
-npm run dev
-```
 
-Y ahora puede abrir http://localhost:5050
 
 
 
