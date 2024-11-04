@@ -2,17 +2,14 @@
 import React, { useState } from 'react';
 import './App.css';
 import backgroundImage from '../src/background.jpg'; // Imagen de fondo
-import Becas from './Becas'; // Importar componente Becas
+import Becas from './Becas';
+import Planes from './Planes';
 
 function App() {
-  const [showBecas, setShowBecas] = useState(false);
+  const [section, setSection] = useState("inicio");
 
-  const handleNavigation = (section) => {
-    if (section === "becas") {
-      setShowBecas(true);
-    } else {
-      setShowBecas(false);
-    }
+  const handleNavigation = (sectionName) => {
+    setSection(sectionName);
   };
 
   return (
@@ -32,10 +29,9 @@ function App() {
         </nav>
       </header>
 
-      {showBecas ? (
-        <Becas />
-      ) : (
-        // Contenido de la página principal
+      {section === "becas" && <Becas />}
+      {section === "planes" && <Planes />}
+      {section === "inicio" && (
         <div className="content">
           <p className="question">¿Quieres conocer tus beneficios?</p>
           <button className="benefits-button">Ingresa aquí</button>
