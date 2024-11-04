@@ -39,7 +39,7 @@ function App() {
       )}
 
       {/* Botón de Soporte en la esquina inferior derecha */}
-      <button className="support-button">Soporte</button>
+      <button className="support-button">Ayuda</button>
     </div>
   );
 }
