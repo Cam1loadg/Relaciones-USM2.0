@@ -1,0 +1,46 @@
+.cuenta-layout {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-and-title {
+    display: flex;
+    align-items: stretch;
+    width: 100%; /* Asegúrate de que use todo el ancho disponible */
+}
+
+.welcome-section {
+    display: flex;
+    flex-direction: column; /* Mantiene los textos en columna */
+    align-items: center; /* Centra los items en el eje transversal (horizontal) */
+    text-align: center; /* Centra el texto dentro de los elementos */
+    justify-content: center;
+    flex-grow: 1; /* Permite que el welcome-section crezca para ocupar el espacio restante */
+    background-color: rgba(26, 95, 143);
+}
+
+.sidebar {
+    width: 250px; /* Ajusta el ancho según lo que necesites */
+    /* Puedes agregar más estilos para el sidebar aquí */
+}
+
+.welcome-section h2 {
+    margin: 0;
+    color: white;
+    font-size: 3em;
+}
+
+.welcome-section h3 {
+    margin: 0;
+    color: #dbdbdb;
+    font-weight: normal;
+}
+
+.main-content-container {
+    margin-top: 20px;
+}

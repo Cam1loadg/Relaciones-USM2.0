@@ -1,0 +1,30 @@
+.sidebar {
+  background-color: #f8f9fa;
+  width: 300px;
+  padding: 1rem;
+}
+
+.sidebar h3 {
+  margin-top: 0;
+  font-weight: bold;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 0.5rem;
+  text-align: center;
+  font-weight: bold; /* Letras en negrita */
+  border: 1px solid rgba(0, 0, 0, 0.452); /* Borde negro */
+  cursor: pointer; /* Cambiar el cursor al de selección */
+  transition: background-color 0.3s ease; /* Transición para el efecto de hover */
+  color: #1d46cc; /* Cambia el color del texto aquí */
+  text-align: left;
+}
+
+.sidebar li:hover {
+  background-color: #e0e0e0; /* Color de fondo al pasar el ratón por encima */
+}

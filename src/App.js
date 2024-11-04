@@ -1,12 +1,14 @@
 // src/App.js
 import React, { useState } from 'react';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import './App.css';
-import backgroundImage from '../src/background.jpg'; // Imagen de fondo
+import backgroundImage from './background.jpg';
 import Becas from './Becas';
 import Planes from './Planes';
-import Ayuda from './Ayuda'
+import Ayuda from './Ayuda';
+import Cuenta from './Cuenta';
 
-function App() {
+function MainApp() {
   const [section, setSection] = useState("inicio");
 
   const handleNavigation = (sectionName) => {
@@ -18,7 +20,7 @@ function App() {
     <div className="App">
       {/* Capa de fondo con transparencia */}
       <div className="background-overlay" style={{ backgroundImage: `url(${backgroundImage})` }}></div>
-      
+
       <header className="app-header">
         <h1>Relaciones USM 2.0</h1>
         <nav className="navbar">
@@ -26,7 +28,7 @@ function App() {
           <a href="#becas" onClick={() => handleNavigation("becas")}>Becas y Beneficios</a>
           <a href="#planes" onClick={() => handleNavigation("planes")}>Planes</a>
           <div className="navbar-right">
-            <a href="#mi-cuenta">Mi Cuenta</a>
+            <Link to="/cuenta">Mi Cuenta</Link>
           </div>
         </nav>
       </header>
@@ -44,8 +46,22 @@ function App() {
       <button className="support-button" onClick={() => handleNavigation("ayuda")}>
         Ayuda
       </button>
-      {section === "ayuda" && <Ayuda/>}
+      {section === "ayuda" && <Ayuda />}
     </div>
+  );
+}
+
+function App() {
+  return (
+    <Router>
+      <Routes>
+        {/* Ruta principal que muestra el componente MainApp */}
+        <Route path="/" element={<MainApp />} />
+        
+        {/* Ruta para el layout de Cuenta */}
+        <Route path="/cuenta" element={<Cuenta />} />
+      </Routes>
+    </Router>
   );
 }
 
