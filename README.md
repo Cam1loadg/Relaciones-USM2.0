@@ -23,6 +23,12 @@ Dirigase a la ruta donde se encuentra el proyecto y en su terminal ejecute:
 npm install
 ```
 
+Y posteriormente:
+```
+npm start
+```
+
+
 
 
 
