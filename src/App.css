@@ -64,7 +64,7 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #f0f0f0;
+  background-color: rgba(161, 161, 161, 0.9);
   padding: 15px;
   border-radius: 8px;
   max-width: 300px;
@@ -113,4 +113,14 @@ h1 {
 
 .support-button:hover {
   background-color: darkred;
+}
+
+.becas-container {
+  margin: 50px auto;
+  padding: 40px; /* Aumenta el relleno interno */
+  background-color: rgba(161, 161, 161, 0.9); /* Fondo blanco con transparencia */
+  border-radius: 8px;
+  max-width: 800px; /* Aumenta el ancho máximo */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destacar */
+  text-align: center;
 }
