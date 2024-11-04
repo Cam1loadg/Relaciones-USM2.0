@@ -4,12 +4,14 @@ import './App.css';
 import backgroundImage from '../src/background.jpg'; // Imagen de fondo
 import Becas from './Becas';
 import Planes from './Planes';
+import Ayuda from './Ayuda'
 
 function App() {
   const [section, setSection] = useState("inicio");
 
   const handleNavigation = (sectionName) => {
     setSection(sectionName);
+    if (sectionName === "ayuda") window.history.pushState(null, "", `/#${sectionName}`);
   };
 
   return (
@@ -39,7 +41,10 @@ function App() {
       )}
 
       {/* Botón de Soporte en la esquina inferior derecha */}
-      <button className="support-button">Ayuda</button>
+      <button className="support-button" onClick={() => handleNavigation("ayuda")}>
+        Ayuda
+      </button>
+      {section === "ayuda" && <Ayuda/>}
     </div>
   );
 }
