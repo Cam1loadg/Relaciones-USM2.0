@@ -1,6 +1,5 @@
-// src/Planes.js
 import React from 'react';
-import './App.css';
+import '../layout_pages/App.css';
 
 function Planes() {
   return (

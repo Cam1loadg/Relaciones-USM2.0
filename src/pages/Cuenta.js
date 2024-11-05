@@ -1,9 +1,8 @@
-// src/Cuenta.js
 import React, { useState } from 'react';
-import HeaderCuenta from './components/Header_cuenta'; // Asegúrate de ajustar la ruta si es necesario
-import Sidebar from './components/Sidebar_cuenta';
-import MainContent from './components/MainContent_cuenta';
-import './Cuenta.css';
+import HeaderCuenta from '../components/Header_cuenta'; // Asegúrate de ajustar la ruta si es necesario
+import Sidebar from '../components/Sidebar_cuenta';
+import MainContent from '../components/MainContent_cuenta';
+import '../layout_pages/Cuenta.css';
 
 function Cuenta() {
   const [activeSection, setActiveSection] = useState('Información General');

@@ -1,11 +1,10 @@
-// src/App.js
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import './App.css';
-import backgroundImage from './background.jpg';
-import Becas from './Becas';
-import Planes from './Planes';
-import Ayuda from './Ayuda';
+import '../layout_pages/App.css';
+import backgroundImage from '../images/background.jpg';
+import Becas from '../components/Becas';
+import Planes from '../components/Planes';
+import Ayuda from '../components/Ayuda';
 import Cuenta from './Cuenta';
 
 function MainApp() {
@@ -38,7 +37,7 @@ function MainApp() {
       {section === "inicio" && (
         <div className="content">
           <p className="question">¿Quieres conocer tus beneficios?</p>
-          <button className="benefits-button">Ingresa aquí</button>
+          <Link to="/cuenta" className="benefits-button">Ingresa aquí</Link>
         </div>
       )}
 

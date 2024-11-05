@@ -1,7 +1,6 @@
-// src/components/HeaderCuenta.js
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Header_cuenta.css';
+import '../layout_components/Header_cuenta.css';
 
 function HeaderCuenta() {
   return (

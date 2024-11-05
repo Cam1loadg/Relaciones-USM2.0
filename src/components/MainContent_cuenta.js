@@ -1,8 +1,7 @@
-// src/components/MainContent.js
 import React, { useState } from 'react';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
-import './MainContent_cuenta.css';
+import '../layout_components/MainContent_cuenta.css';
 
 function MainContent({ activeSection }) {
   const [selectedDate, setSelectedDate] = useState(null);

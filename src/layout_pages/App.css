@@ -1,4 +1,3 @@
-/* Capa de fondo con transparencia */
 .App {
   position: relative;
   text-align: center;
@@ -90,6 +89,7 @@ h1 {
   font-weight: bold;
   cursor: pointer;
   font-size: 1em;
+  text-decoration: none;
 }
 
 .benefits-button:hover {

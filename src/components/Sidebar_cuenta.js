@@ -1,6 +1,5 @@
-// src/components/Sidebar.js
 import React from 'react';
-import './Sidebar_cuenta.css';
+import '../layout_components/Sidebar_cuenta.css';
 
 function Sidebar({ onSectionChange }) {
   return (

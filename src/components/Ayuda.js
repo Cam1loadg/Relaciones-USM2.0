@@ -1,6 +1,5 @@
-// src/Becas.js
 import React from 'react';
-import './App.css';
+import '../layout_pages/App.css';
 
 function Ayuda() {
     const faq = [
