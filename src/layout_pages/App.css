@@ -109,9 +109,28 @@ h1 {
   font-weight: bold;
   cursor: pointer;
   font-size: 1em;
+  text-decoration: none;
 }
 
 .support-button:hover {
+  background-color: rgb(170, 120, 20);
+}
+
+.return-button {
+  position: left;
+  margin: 30px;
+  height: 40px;
+  width: 90px;
+  background-color: rgb(209, 170, 31);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.return-button:hover {
   background-color: rgb(170, 120, 20);
 }
 
