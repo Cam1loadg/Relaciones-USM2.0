@@ -1,46 +1,45 @@
-.cuenta-layout {
-    display: flex;
-    flex-direction: column;
-}
-
-.content-container {
-    display: flex;
-    flex-direction: column;
-}
-
-.sidebar-and-title {
-    display: flex;
-    align-items: stretch;
-    width: 100%; /* Asegúrate de que use todo el ancho disponible */
-}
-
-.welcome-section {
-    display: flex;
-    flex-direction: column; /* Mantiene los textos en columna */
-    align-items: center; /* Centra los items en el eje transversal (horizontal) */
-    text-align: center; /* Centra el texto dentro de los elementos */
-    justify-content: center;
-    flex-grow: 1; /* Permite que el welcome-section crezca para ocupar el espacio restante */
-    background-color: rgba(26, 95, 143);
-}
-
-.sidebar {
-    width: 250px; /* Ajusta el ancho según lo que necesites */
-    /* Puedes agregar más estilos para el sidebar aquí */
-}
-
-.welcome-section h2 {
-    margin: 0;
-    color: white;
-    font-size: 3em;
-}
-
-.welcome-section h3 {
-    margin: 0;
-    color: #dbdbdb;
-    font-weight: normal;
-}
-
-.main-content-container {
+/* Estilos para el componente UserInfo */
+.profile-container {
     margin-top: 20px;
-}
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 15px;
+    border-radius: 8px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+  }
+  
+  .profile-info {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+    text-align: left;
+    width: 100%;
+  }
+  
+  .profile-info p {
+    font-size: 1.1em;
+    margin: 5px 0;
+  }
+  
+  .logout-button {
+    background-color: rgb(209, 170, 31);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 10px 15px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .logout-button:hover {
+    background-color: rgb(170, 120, 20);
+  }
+  

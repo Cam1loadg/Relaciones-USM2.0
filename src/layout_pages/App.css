@@ -183,3 +183,153 @@ h1 {
   position: absolute; /* Posiciona la barra */
   left: -15px; /* Alineado a la izquierda del elemento de la lista */
 }
+.navbar-item-with-submenu {
+  position: relative;
+  padding-top: 10px;
+  font-size: 1.1em;
+}
+
+.navbar-item-with-submenu .menu-item {
+  font-weight: bold;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background 0.3s;
+  border-radius: 5px;
+}
+
+.navbar-item-with-submenu .menu-item:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.submenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.9); /* Fondo con transparencia */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  z-index: 1;
+  padding: 10px 0;
+  min-width: 150px;
+}
+
+.submenu a {
+  display: block;
+  padding: 10px 15px;
+  color: #333;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.submenu a:hover {
+  background-color: rgba(209, 170, 31, 0.8);
+  color: white;
+  border-radius: 5px;
+}
+
+.date-picker-container {
+  display: flex;
+  flex-direction: column; /* Coloca los elementos en columna */
+  align-items: center; /* Centra los elementos en el eje horizontal */
+  justify-content: center; /* Centra los elementos en el eje vertical si es necesario */
+  width: 100%; /* Asegura que ocupe todo el ancho disponible */
+  max-width: 400px; /* Ajusta el ancho máximo según sea necesario */
+  margin: 0 auto; /* Centra el contenedor en la página */
+}
+
+.date-picker-icon {
+  margin-bottom: 10px; /* Espaciado inferior entre el ícono y el calendario */
+}
+
+.hours-list {
+  margin-top: 20px;
+}
+
+.hour-item {
+  background-color: #007BFF; /* Color de fondo */
+  color: white; /* Color del texto */
+  padding: 10px; /* Espaciado interno */
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer; /* Cambia el cursor a puntero al pasar el ratón */
+  margin-bottom: 10px; /* Espacio entre las horas */
+  transition: background-color 0.3s; /* Efecto de transición */
+}
+
+.hour-item:hover {
+  background-color: #0056b3; /* Color al pasar el ratón */
+}
+
+.confirmation-message {
+  margin-top: 20px;
+  border: 1px solid #ccc; /* Borde gris claro */
+  padding: 15px;
+  border-radius: 5px; /* Bordes redondeados */
+  background-color: #f9f9f9; /* Fondo gris claro */
+}
+
+.appointment-container {
+  background-color: rgba(255, 255, 255, 0.9); /* Color de fondo blanco con transparencia */
+  border-radius: 8px; /* Bordes redondeados */
+  padding: 20px; /* Espaciado interno */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destacar */
+  max-width: 600px; /* Ancho máximo del contenedor */
+  margin: 20px auto; /* Centra el contenedor en la página */
+  text-align: center; /* Centra el texto dentro del contenedor */
+}
+
+.login-button, .logout-button {
+  background-color: rgb(209, 170, 31);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 10px 15px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.login-button:hover, .logout-button:hover {
+  background-color: rgb(170, 120, 20);
+}
+
+/* Estilos para el componente UserInfo */
+.profile-container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 15px;
+  border-radius: 8px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1;
+}
+
+.profile-info {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+  text-align: left;
+  width: 100%;
+}
+
+/* Espacio entre los bloques */
+.profile-info p {
+  font-size: 1.1em;
+  margin: 25px 0; /* Aumenta el espacio entre los párrafos */
+}
+
+/* Estilo de la imagen del perfil */
+.profile-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 20px 0; /* Espaciado antes y después de la imagen */
+  display: block; /* Hace que la imagen sea un bloque */
+  margin-left: auto; /* Centra la imagen horizontalmente */
+  margin-right: auto; /* Centra la imagen horizontalmente */
+}
