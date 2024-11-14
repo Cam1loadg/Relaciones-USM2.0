@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import '../layout_pages/App.css';
-import backgroundImage from '../images/background.jpg';
+import backgroundImage from '../images/background.png';
 import InfoBecas from '../components/InfoBecas';
 import Planes from '../components/Planes';
 import Ayuda from '../components/Ayuda';
@@ -35,7 +35,6 @@ function MainApp() {
       <div className="background-overlay" style={{ backgroundImage: `url(${backgroundImage})` }}></div>
 
       <header className="app-header">
-        <h1>Relaciones USM 2.0</h1>
         <nav className="navbar">
           <a href="#inicio" onClick={() => handleNavigation("inicio")}>Inicio</a>
           <div
@@ -66,7 +65,7 @@ function MainApp() {
           </div>
 
           <a href="#planes" onClick={() => handleNavigation("planes")}>Planes</a>
-
+          <div className="navbar-title">Relaciones USM 2.0</div>
 
           <div className="navbar-right">
             {user ? (
@@ -93,8 +92,12 @@ function MainApp() {
       {section === "psicologo" && <div className="content"></div> && <Agenda activeSection={"Agendar hora psicólogo"} user={user} onLogin={handleLogin}/>}
       {section === "dentista" && <div className="content"></div> && <Agenda activeSection={"Agendar hora dentista"} user={user} onLogin={handleLogin}/>}
 
-      {/* Botón de Soporte en la esquina inferior derecha */}
-      <Link to="/ayuda" className="support-button">Ayuda</Link>
+      {/* <div className='info-container'>
+        <div>yometrei dahs</div>
+        <div>globlaofgesfsfsfsefnsive</div>
+      </div> */}
+      <a href="#ayuda" className="support-button" onClick={() => handleNavigation("ayuda")}>Ayuda</a>
+      {section === "ayuda" && <Ayuda />}
     </div>
   );
 }
