@@ -104,6 +104,26 @@
   background-color: rgb(170, 120, 20);
 }
 
+.benefits-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Espacio entre los cuadros */
+}
+.benefit-item {
+  background-color: #007BFF; /* Color de fondo */
+  color: white; /* Color del texto */
+  padding: 15px; /* Espaciado interno */
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer; /* Cambia el cursor a puntero al pasar el ratón */
+  transition: background-color 0.3s; /* Efecto de transición */
+  text-align: center;
+  font-size: 1em;
+  font-weight: bold;
+}
+.benefit-item:hover {
+  background-color: #0056b3; /* Color al pasar el ratón */
+}
+
 /* Botón de soporte */
 .support-button {
   position: fixed;
